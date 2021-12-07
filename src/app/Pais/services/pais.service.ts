@@ -28,4 +28,9 @@ export class PaisService {
     const url = `${this.apiURL}/alpha/${codigo}`;
     return this.http.get<Pais>(url);
   }
+
+  buscarRegion( region:string){
+    const url = `${this.apiURL}/region/${region}`;
+    return this.http.get<Pais[]>(url);
+  }
 }
